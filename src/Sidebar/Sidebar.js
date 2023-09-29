@@ -1,6 +1,5 @@
 import Category from "./Category/Category";
-import Price from "./Price/Price";
-import Colors from "./Colors/Colors";
+import Uni from "./Uni/uni";
 import "./Sidebar.css";
 
 const Sidebar = ({ handleChange }) => {
@@ -8,11 +7,10 @@ const Sidebar = ({ handleChange }) => {
     <>
       <section className="sidebar">
         <div className="logo-container">
-          <h1>🛒</h1>
         </div>
         <Category handleChange={handleChange} />
-        <Price handleChange={handleChange} />
-        <Colors handleChange={handleChange} />
+        <Uni handleChange={handleChange} />
+        
       </section>
     </>
   );

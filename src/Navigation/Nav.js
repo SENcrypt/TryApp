@@ -11,20 +11,10 @@ const Nav = ({ handleInputChange, query }) => {
           type="text"
           onChange={handleInputChange}
           value={query}
-          placeholder="Enter your search shoes."
+          placeholder="Enter your search project."
         />
       </div>
-      <div className="profile-container">
-        <a href="#">
-          <FiHeart className="nav-icons" />
-        </a>
-        <a href="">
-          <AiOutlineShoppingCart className="nav-icons" />
-        </a>
-        <a href="">
-          <AiOutlineUserAdd className="nav-icons" />
-        </a>
-      </div>
+      
     </nav>
   );
 };

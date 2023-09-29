@@ -1,11 +1,11 @@
 import Input from "../../components/Input";
-import "./Price.css";
+import "./uni.css";
 
-const Price = ({ handleChange }) => {
+const Uni = ({ handleChange }) => {
   return (
     <>
       <div className="ml">
-        <h2 className="sidebar-title price-title">Price</h2>
+        <h2 className="sidebar-title uni-title">University</h2>
 
         <label className="sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="test2" />
@@ -14,29 +14,29 @@ const Price = ({ handleChange }) => {
 
         <Input
           handleChange={handleChange}
-          value={50}
-          title="$0 - 50"
+          value={"MAKAUT"}
+          title="MAKAUT"
           name="test2"
         />
 
         <Input
           handleChange={handleChange}
-          value={100}
-          title="$50 - $100"
+          value={"CU"}
+          title="Calcutta"
           name="test2"
         />
 
         <Input
           handleChange={handleChange}
-          value={150}
-          title="$100 - $150"
+          value={"JU"}
+          title="Jadavpur"
           name="test2"
         />
 
         <Input
           handleChange={handleChange}
-          value={200}
-          title="Over $150"
+          value={"Burdwan"}
+          title="Burdwan"
           name="test2"
         />
       </div>
@@ -44,4 +44,4 @@ const Price = ({ handleChange }) => {
   );
 };
 
-export default Price;
+export default Uni;

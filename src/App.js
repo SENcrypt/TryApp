@@ -43,25 +43,22 @@ function App() {
     // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, company, newPrice, title }) =>
+        ({ category,uni, title }) =>
           category === selected ||
-          color === selected ||
-          company === selected ||
-          newPrice === selected ||
+          uni === selected ||
           title === selected
       );
     }
 
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+      ({ img, title, star, reviews, uni }) => (
         <Card
           key={Math.random()}
           img={img}
           title={title}
           star={star}
           reviews={reviews}
-          prevPrice={prevPrice}
-          newPrice={newPrice}
+          uni={uni}
         />
       )
     );
